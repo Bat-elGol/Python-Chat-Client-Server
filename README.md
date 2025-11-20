@@ -22,11 +22,15 @@ Note: Ensure the client is configured to connect to the correct IP address and p
 
 ## System Overview
 The project uses a TCP client–server architecture:
+
 **Server:**
+
 - Uses threading to handle multiple clients simultaneously
 - Broadcasts messages to all connected users
 - Logs all activity (connections, messages) to a text file
+- 
 **Client:**
+  
 - Connects to the server using TCP
 - Sends messages and receives real-time updates
 - Runs in multiple terminals for multiple users
